@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 15 kod</title>
+        <link rel="icon" href="../images/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="40" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 15&lt;/title&gt;
+        &lt;link rel="icon" href="../images/icon.png"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div style="color: green; font-size: 31px;"&gt;
+            &lt;script&gt;
+                var x1_als=prompt("Podaj pierwszą liczbę = ","");
+                var x2_als=prompt("Podaj drugą liczbę = ","");
+
+                var x1_als_r = x1_als * Math.PI / 180;
+                var x2_als_r = x2_als * Math.PI / 180;
+                x1_als_r = x1_als_r.toFixed(4);
+                x2_als_r = x2_als_r.toFixed(4);
+
+                var y1 = parseFloat(3 * Math.pow(x1_als, 9/11));
+                y1 = y1.toFixed(4);
+
+                var y2 = parseFloat(2 * Math.cos(x1_als_r)) + (2 * Math.sin(x2_als_r));
+                y2 = y2.toFixed(4);
+
+                var a = Math.pow(x1_als, 5);
+                var b = 2 * Math.pow(x2_als, 4);
+                var c = x1_als - x2_als;
+                c = Math.abs(c);
+                var y3 = Math.cbrt(a + b * c);
+
+                document.write("x1 = "+x1_als+"[stopni] x1="+x1_als_r+"[radiany]&lt;br&gt;");
+                document.write("x2 = "+x2_als+"[stopni] x2="+x2_als_r+"[radiany]&lt;br&gt;");
+                document.write("y1 = "+y1+"&lt;br&gt;");
+                document.write("y2 = "+y2+"&lt;br&gt;");
+                document.write("y3 = "+y3+"&lt;br&gt;");
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>
+

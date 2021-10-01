@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 13 kod</title>
+        <link rel="icon" href="../images/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="30" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 13&lt;/title&gt;
+        &lt;link rel="icon" href="../images/icon.png"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div style="color: navy; font-size: 24px;"&gt;
+            &lt;script&gt;
+                var a_als=prompt("Podaj pierwszą liczbę = ", "");
+                var b_als=prompt("Podaj drugą liczbę = ", "");
+                var a = parseInt(a_als);
+                var b = parseInt(b_als);
+
+                document.write("Wczytane liczby: A="+a+" B="+b+"&lt;br&gt;");
+                var w1 = Math.pow(a, 3);
+                var w2 = 3 * b * (Math.pow(a, 2));
+                var w3 = 3 * a * (Math.pow(b, 2));
+                var w4 = Math.pow(b, 3);
+                var wynik = w1 + w2 + w3 + w4;
+                document.write("("+a+"+"+b+")^3 = "+a+"^3 + 3*(("+a+")^"+b+")*("+b+") + 3*("+a+")*(("+b+")^"+b+") + "+b+"^3 = "+w1+" + "+w2+" + "+w3+" + "+w4+" = "+wynik+"&lt;br&gt;")
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>

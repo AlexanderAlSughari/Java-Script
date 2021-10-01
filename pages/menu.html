@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+        <link rel="icon" href="../images/icon.png">
+
+        <script language="JavaScript">
+			function WinOpen_AlSughari_1()
+			{
+                var left = (screen.width/2)-(200/2)-350;
+                var top = (screen.height/2)-(350/2)-50;
+
+				window.open("obraz1.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+top+",left="+left+"");
+			}
+			
+			function WinOpen_AlSughari_2()
+			{
+                var left = (screen.width/2)-(200/2)-130;
+                var top = (screen.height/2)-(350/2)-50;
+				window.open("obraz2.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+top+",left="+left+"");
+			}
+			
+			function WinOpen_AlSughari_3()
+			{
+                var left = (screen.width/2)-(200/2)+90;
+                var top = (screen.height/2)-(350/2)-50;
+				window.open("obraz3.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+top+",left="+left+"");
+			}
+			
+			function WinOpen_AlSughari_4()
+			{
+                var left = (screen.width/2)-(200/2)+310;
+                var top = (screen.height/2)-(350/2)-50;
+				window.open("obraz4.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+top+",left="+left+"");
+			}
+
+            function okno_zamknij_AlSughari()
+            {
+                window.close();
+            }
+		</script>
+    </head>
+    <body>
+        <form>
+			<input type="button" name="przycisk" value="grafika1" onclick="WinOpen_AlSughari_1()">
+			<input type="button" name="przycisk" value="grafika2" onclick="WinOpen_AlSughari_2()">
+			<input type="button" name="przycisk" value="grafika3" onclick="WinOpen_AlSughari_3()">
+			<input type="button" name="przycisk" value="grafika4" onclick="WinOpen_AlSughari_4()">
+            &emsp; &emsp; &emsp;
+            <input type="button" name="przycisk" value="Zamknij okno" onclick="okno_zamknij_AlSughari()">
+		</form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="icon" href="../images/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="30" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 9&lt;/title&gt;
+        &lt;link rel="icon" href="../images/icon.png"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div style="color: green; font-size: 31px;"&gt;
+            &lt;script&gt;
+                var dzien1_als = prompt("Dzień 1 = ", "");
+                var godzina1_als = prompt("Godzina 1 = ", "");
+                var dzien2_als = prompt("Dzień 2 = ", "");
+                var godzina2_als = prompt("Godzina 2 = ", "");
+                var sekundy;
+                var a = parseInt(dzien1_als);
+                var b = parseInt(dzien2_als);
+                a = a * 24 * 60 * 60;
+                b = b * 24 * 60 * 60;
+                a += godzina1_als * 60 * 60;
+                b += godzina2_als * 60 * 60;
+                suma = a - b;
+                document.write("Dzień 1 = " + dzien1_als + ", godzina: " + godzina1_als + "&lt;br&gt;");
+                document.write("Dzień 2 = " + dzien2_als + ", godzina: " + godzina2_als + "&lt;br&gt;");
+                document.write("ilość sekund = " + suma + " sekund &lt;br&gt;");
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>

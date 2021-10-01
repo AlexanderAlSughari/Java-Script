@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 8</title>
+        <link rel="icon" href="../images/icon.png">
+    </head>
+    <body>
+        <div style="color: green; font-size: 31px;">
+            <script>
+                var dzien1_als=prompt("Dzień 1 = ", "");
+                var dzien2_als=prompt("Dzień 2 = ", "");
+                var sekundy;
+                var a=parseInt(dzien1_als);
+                var b=parseInt(dzien2_als);
+                a = a * 24 * 60 * 60;
+                b = b * 24 * 60 * 60;
+                suma = a - b;
+
+                document.write("Dzień 1 = "+dzien1_als+"<br>");
+                document.write("Dzień 2 = "+dzien2_als+"<br>");
+                document.write("Ilość sekund = "+dzien1_als+" - "+dzien2_als+" = "+suma+"<br>");
+            </script>
+        </div>
+    </body>
+</html>
