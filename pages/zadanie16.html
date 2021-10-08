@@ -18,26 +18,66 @@
         <table>
             <tr>
                 <td>
-                    Cztery sposoby wyprowadzania danych w JS oraz innerHTML.
+                    Cztery sposoby <b><u>wyprowadzania</u></b> danych na stronę:
+                    <ol type="1.">   
+                        <li>z użyciem dokument.write()</li>
+                        <li>z użyciem okiena alert()</li>
+                        <li>do okienek formularza</li>
+                        <li>do tabeli</li>
+                    </ol>
                 </td>
             </tr>
         </table>
-        <ol type="1.">
-            Cztery sposoby <b><u>wyprowadzania</u></b> danych na stronę:
-            <li>z użyciem dokument.write()</li>
-            <li>z użyciem okiena alert()</li>
-            <li>do okienek formularza</li>
-            <li>do tabeli</li>
-        </ol>
-        <table>
-            <tr>
-                <td>
-                    Właściwości <b>innerHTML</b> umożliwia umieszczenie za pomocą jednej instrukcji dowolnie złożonej zawartości HTML we wskazanym elemencie np. w tabeli.
-                </td>
-            </tr>
-        </table>
-        <p>
-            getElementByName &rarr; wyprowadzanie do okienka formularza
-        </p>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <b>Co to jest funkcja?</b>
+                        <ol type="1.">   
+                            <li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy</li>
+                            <li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod</li>
+                            <li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.
+                                suma_als(a, b)</li>
+                            <li>Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <b>return.</b></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+                <br>
+            <table>
+                <tr>
+                    <td align="center";><b>metoda</b></td>
+                    <td align="center";><b>opis</b></td>
+                </tr>
+                <tr>
+                    <td>getElementById("id")</td>
+                    <td>dostęp do wszystkich elementów o konkretnej
+                        wartości atrybutu id</td>
+                </tr>
+                <tr>
+                    <td>getElementByTagName("znacznik")</td>
+                    <td>dostęp do wszystkich elementów o typie
+                        znacznika, np. P lub DIV </td>
+                </tr>
+                <tr>
+                    <td>getElementByName("nazwa") </td>
+                    <td>dostęp do wszystkich elementów o konkretnej
+                        wartości atrybutu</td>
+                </tr>
+            </table>
+                <br>
+            <table>
+                <tr>
+                    <td>
+                        <b>Właściwości tak pobranego elementu to:</b>
+                        <ul>
+                            <li><b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w
+                                tabeli</li>
+                            <li><b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie</li>
+                            <li><b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
     </body>
 </html>
