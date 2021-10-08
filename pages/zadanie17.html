@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head> 
+        <title>Użycie fukcji</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../images/icon.png">
+    </head>
+    <body>
+        <div style="color:navy;font-size:50px;">
+            <script language="JavaScript">
+                var a=parseFloat(prompt("a=",""));
+                var b=parseFloat(prompt("b=",""));
+                function dodawanie_als(a, b)
+                {
+                    return a + b;
+                }
+
+                function odejmowanie_als(a, b)
+                {
+                    return a - b;
+                }
+
+                function mnozenie_als(a, b)
+                {
+                    return a * b;
+                }
+
+                function kwadrat_a_als(a, b)
+                {
+                    return a * a;
+                }
+
+                function kwadrat_b_als(a, b)
+                {
+                    return b * b;
+                }
+
+                function modulo_als(a, b)
+                {
+                    return a % b;
+                }
+                document.write("dodawanie = "+dodawanie_als(a,b)+"<br>");
+                document.write("odejmowanie = "+odejmowanie_als(a,b)+"<br>");
+                document.write("mnozenie = "+mnozenie_als(a,b)+"<br>");
+                document.write("kwadrat a = "+kwadrat_a_als(a,b)+"<br>");
+                document.write("kwadrat b = "+kwadrat_b_als(a,b)+"<br>");
+                document.write("modulo = "+modulo_als(a,b)+"<br>");
+            </script>
+        </div>
+    </body>
+</html>
