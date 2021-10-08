@@ -167,3 +167,13 @@ function OtworzOkno_AlSughari_z17()
 
     window.open("pages/zadanie17.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
 }
+
+function OtworzOkno_AlSughari_z18()
+{
+    var height = 400;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/2)-(height/2);
+
+    window.open("pages/zadanie18.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
