@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 9</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <div style="color: green; font-size: 31px;">
+            <script>
+                var dzien1_als = prompt("Dzień 1 = ", "");
+                var godzina1_als = prompt("Godzina 1 = ", "");
+                var dzien2_als = prompt("Dzień 2 = ", "");
+                var godzina2_als = prompt("Godzina 2 = ", "");
+                var sekundy;
+                var a = parseInt(dzien1_als);
+                var b = parseInt(dzien2_als);
+                a = a * 24 * 60 * 60;
+                b = b * 24 * 60 * 60;
+                a += godzina1_als * 60 * 60;
+                b += godzina2_als * 60 * 60;
+                suma = a - b;
+                document.write("Dzień 1 = " + dzien1_als + ", godzina: " + godzina1_als + "<br>");
+                document.write("Dzień 2 = " + dzien2_als + ", godzina: " + godzina2_als + "<br>");
+                document.write("ilość sekund = " + suma + " sekund <br>");
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 6</title>
+        <link rel="icon" href="../img/icon.png">
+
+        <script>
+            function show_prompt()
+            {
+                var name=prompt("Napisz imię","Imię Nazwisko");
+
+                if (name!=null && name!="")
+                {
+                    document.write("Witaj " + name + "! jak się masz?");
+                }
+            } 
+
+            function ZamknijOkno_AlSughari()
+			{
+				window.close()
+			}
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="show_prompt()">Pokaż Prompt Box</button>
+        &emsp; &emsp; &emsp;
+        <button type="buton" onclick="ZamknijOkno_AlSughari()">Zamknij okno</button>
+    </body>
+</html>

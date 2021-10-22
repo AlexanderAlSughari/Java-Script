@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="../img/icon.png">
+    <title>Przykład obliczenia Pola i Obwodu prostokąta</title>
+    <script language="JavaScript">
+        function Pole_AlSughari(a_als,b_als)
+        {
+            a=parseFloat(a_als);
+            b=parseFloat(b_als);
+            Pole_wynik=a*b;
+            document.getElementsByName('pole')[0].value=Pole_wynik.toFixed(2); /* na dokument */
+            alert("Pole="+Pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+            wyprowadz_pole_AlSughari.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+        }
+        function Obwod_AlSughari(a_als,b_als)
+        {
+            a=parseFloat(a_als);
+            b=parseFloat(b_als);
+            Ob_wynik=2*b + 2*a;
+            document.getElementsByName('obw')[0].value=Ob_wynik.toFixed(2);
+            alert("Obwod="+Ob_wynik.toFixed(2)+" cm");
+            wyprowadz_obowod_AlSughari.innerHTML="Obwod="+Ob_wynik.toFixed(2)+"cm";
+        }
+    </script>
+    </head>
+    <body>
+        Pobliczanie Pola i Obwodu prostokąta
+            <br> <br>
+        <form name="formularz" action="..." onsubmit="Pole_AlSughari(this.a_dana_als.value,this.b_dana_als.value);
+            Obwod_AlSughari(this.a_dana_als.value,this.b_dana_als.value);return false">
+            Podaj a=
+            <input size="6" name="a_dana_als">
+            Podaj b=
+            <input size="6" name="b_dana_als">
+            <br>
+            <br>
+            <input TYPE="submit" Value="oblicz" >
+            <br>
+            <br>
+            Obwod=
+            <input size="6" name="obw">
+            Pole=
+            <input size="6" name="pole">
+        </form>
+        <table>
+            <tr id="wyprowadz_pole_AlSughari"></tr>
+            <tr id="wyprowadz_obowod_AlSughari"></tr>
+        </table>
+    </body>
+</html>
+

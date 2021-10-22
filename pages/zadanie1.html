@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 1</title>
+        <link rel="icon" href="../img/icon.png">
+        
+        <script language="JavaScript">
+            function WinOpen_AlSughari()
+            {
+                var left = (screen.width/2)-(900/2);
+                var top = (screen.height/2)-(900/2);
+
+                window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=900,width=900,top="+top+",left="+left+"");
+            }
+
+            function okno_zamknij_AlSughari()
+            {
+                window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_AlSughari()">
+            <input type="button" name="przycisk" value="Zamknij okno" onclick="okno_zamknij_AlSughari()">
+        </form>
+    </body>
+</html>
