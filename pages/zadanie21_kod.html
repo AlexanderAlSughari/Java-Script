@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 22 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="63" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+    &lt;title&gt;Zadanie 21&lt;/title&gt;
+    &lt;script language="JavaScript"&gt;
+        function Dlugosc_AlSughari(d_als, x_als)
+        {
+            d=parseFloat(d_als);
+            x=parseFloat(x_als);
+            dlugosc=Math.sqrt(x*x+d*d);
+            document.getElementsByName('dlg')[0].value=dlugosc.toFixed(2); /* na dokument */
+            alert("Drabina="+dlugosc.toFixed(2)+" m"); /*do okna Alert */
+            wyprowadz_dlugosc_AlSughari.innerHTML="Drabina="+dlugosc.toFixed(2)+" cm"+"&lt;br&gt;"; /* do tabeli */
+        }
+        function Kat_AlSughari(d_als, x_als)
+        {
+            d=parseFloat(d_als);
+            x=parseFloat(x_als);
+            radiany=Math.atan2(d,x);
+            alfa=radiany*(180/Math.PI);
+            document.getElementsByName('alfa')[0].value=alfa.toFixed(2); /* na dokument */
+            alert("Alfa="+alfa.toFixed(2)+" m"); /*do okna Alert */
+            wyprowadz_alfa_AlSughari.innerHTML="Alfa="+alfa.toFixed(2)+" cm"+"&lt;br&gt;"; /* do tabeli */
+        }
+    &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Obliczanie długosci i kąta nachylenia drabiny
+            &lt;br&gt; &lt;br&gt;
+        &lt;form name="formularz" action="..." onsubmit="Dlugosc_AlSughari(this.d_dana_als.value,this.x_dana_als.value);
+            Kat_AlSughari(this.d_dana_als.value,this.x_dana_als.value);return false"&gt;
+            Podaj d=
+            &lt;input size="6" name="d_dana_als"&gt;
+            Podaj x=
+            &lt;input size="6" name="x_dana_als"&gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            &lt;input TYPE="submit" Value="oblicz" &gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            Drabina=
+            &lt;input size="6" name="dlg"&gt;
+            Alfa=
+            &lt;input size="6" name="alfa"&gt;
+        &lt;/form&gt;
+        &lt;table&gt;
+            &lt;tr id="wyprowadz_dlugosc_AlSughari"&gt;&lt;/tr&gt;
+            &lt;tr id="wyprowadz_alfa_AlSughari"&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>

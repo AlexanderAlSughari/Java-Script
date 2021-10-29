@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="../img/icon.png">
+    <title>Zadanie 22</title>
+    <script language="JavaScript">
+        function Wysokosc_AlSughari(odl_als, s_als)
+        {
+            odl=parseFloat(odl_als);
+            s=parseFloat(s_als);
+            wysokosc=Math.sqrt(s*s-odl*odl);
+            document.getElementsByName('wys')[0].value=wysokosc.toFixed(2); /* na dokument */
+            alert("Wysokość="+wysokosc.toFixed(2)+" m"); /*do okna Alert */
+            wyprowadz_wys_AlSughari.innerHTML="Wysokość="+wysokosc.toFixed(2)+" m"+"<br>"; /* do tabeli */
+        }
+        function Kat_AlSughari(odl_als, s_als)
+        {
+            odl=parseFloat(odl_als);
+            s=parseFloat(s_als);
+            droga=Math.sqrt(s*s-odl*odl);
+            radiany=Math.atan2(odl, droga);
+            alfa=radiany*(180/Math.PI);
+            document.getElementsByName('kat')[0].value=alfa.toFixed(2);
+            alert("Kąt="+alfa.toFixed(2)+" m");
+            wyprowadz_kat_AlSughari.innerHTML="Kąt="+alfa.toFixed(2)+" m";
+        }
+    </script>
+    </head>
+    <body>
+        Obliczanie wysokości i kąta
+            <br> <br>
+        <form name="formularz" action="..." onsubmit="Wysokosc_AlSughari(this.a_dana_als.value,this.b_dana_als.value);
+            Kat_AlSughari(this.a_dana_als.value,this.b_dana_als.value);return false">
+            Podaj odleglosc=
+            <input size="6" name="a_dana_als">
+            Podaj droge=
+            <input size="6" name="b_dana_als">
+            <br>
+            <br>
+            <input TYPE="submit" Value="oblicz" >
+            <br>
+            <br>
+            Wysokosc=
+            <input size="6" name="wys">
+            Kat=
+            <input size="6" name="kat">
+        </form>
+        <table>
+            <tr id="wyprowadz_wys_AlSughari"></tr>
+            <tr id="wyprowadz_kat_AlSughari"></tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 22 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="63" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+    &lt;title&gt;Zadanie 22&lt;/title&gt;
+    &lt;script language="JavaScript"&gt;
+        function Wysokosc_AlSughari(odl_als, s_als)
+        {
+            odl=parseFloat(odl_als);
+            s=parseFloat(s_als);
+            wysokosc=Math.sqrt(s*s-odl*odl);
+            document.getElementsByName('wys')[0].value=wysokosc.toFixed(2); /* na dokument */
+            alert("Wysokość="+wysokosc.toFixed(2)+" m"); /*do okna Alert */
+            wyprowadz_wys_AlSughari.innerHTML="Wysokość="+wysokosc.toFixed(2)+" m"+"&lt;br&gt;"; /* do tabeli */
+        }
+        function Kat_AlSughari(odl_als, s_als)
+        {
+            odl=parseFloat(odl_als);
+            s=parseFloat(s_als);
+            droga=Math.sqrt(s*s-odl*odl);
+            radiany=Math.atan2(odl, droga);
+            alfa=radiany*(180/Math.PI);
+            document.getElementsByName('kat')[0].value=alfa.toFixed(2);
+            alert("Kąt="+alfa.toFixed(2)+" m");
+            wyprowadz_kat_AlSughari.innerHTML="Kąt="+alfa.toFixed(2)+" m";
+        }
+    &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Obliczanie wysokości i kąta
+            &lt;br&gt; &lt;br&gt;
+        &lt;form name="formularz" action="..." onsubmit="Wysokosc_AlSughari(this.a_dana_als.value,this.b_dana_als.value);
+            Kat_AlSughari(this.a_dana_als.value,this.b_dana_als.value);return false"&gt;
+            Podaj odleglosc=
+            &lt;input size="6" name="a_dana_als"&gt;
+            Podaj droge=
+            &lt;input size="6" name="b_dana_als"&gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            &lt;input TYPE="submit" Value="oblicz" &gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            Wysokosc=
+            &lt;input size="6" name="wys"&gt;
+            Kat=
+            &lt;input size="6" name="kat"&gt;
+        &lt;/form&gt;
+        &lt;table&gt;
+            &lt;tr id="wyprowadz_wys_AlSughari"&gt;&lt;/tr&gt;
+            &lt;tr id="wyprowadz_kat_AlSughari"&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>

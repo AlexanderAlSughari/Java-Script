@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="../img/icon.png">
+    <title>Zadanie 21</title>
+    <script language="JavaScript">
+        function Dlugosc_AlSughari(d_als, x_als)
+        {
+            d=parseFloat(d_als);
+            x=parseFloat(x_als);
+            dlugosc=Math.sqrt(x*x+d*d);
+            document.getElementsByName('dlg')[0].value=dlugosc.toFixed(2); /* na dokument */
+            alert("Drabina="+dlugosc.toFixed(2)+" m"); /*do okna Alert */
+            wyprowadz_dlugosc_AlSughari.innerHTML="Drabina="+dlugosc.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+        }
+        function Kat_AlSughari(d_als, x_als)
+        {
+            d=parseFloat(d_als);
+            x=parseFloat(x_als);
+            radiany=Math.atan2(d,x);
+            alfa=radiany*(180/Math.PI);
+            document.getElementsByName('alfa')[0].value=alfa.toFixed(2); /* na dokument */
+            alert("Alfa="+alfa.toFixed(2)+" m"); /*do okna Alert */
+            wyprowadz_alfa_AlSughari.innerHTML="Alfa="+alfa.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+        }
+    </script>
+    </head>
+    <body>
+        Obliczanie długosci i kąta nachylenia drabiny
+            <br> <br>
+        <form name="formularz" action="..." onsubmit="Dlugosc_AlSughari(this.d_dana_als.value,this.x_dana_als.value);
+            Kat_AlSughari(this.d_dana_als.value,this.x_dana_als.value);return false">
+            Podaj d=
+            <input size="6" name="d_dana_als">
+            Podaj x=
+            <input size="6" name="x_dana_als">
+            <br>
+            <br>
+            <input TYPE="submit" Value="oblicz" >
+            <br>
+            <br>
+            Drabina=
+            <input size="6" name="dlg">
+            Alfa=
+            <input size="6" name="alfa">
+        </form>
+        <table>
+            <tr id="wyprowadz_dlugosc_AlSughari"></tr>
+            <tr id="wyprowadz_alfa_AlSughari"></tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="../img/icon.png">
+    <title>Zadanie 20</title>
+    <script language="JavaScript">
+        function Pow_AlSughari(a_als, b_als, h_als)
+        {
+            a=parseFloat(a_als);
+            b=parseFloat(b_als);
+            h=parseFloat(h_als);
+            pole=(a+b)*(h/2);
+            document.getElementsByName('pole')[0].value=pole.toFixed(2); /* na dokument */
+            alert("Pole="+pole.toFixed(2)+" cm^2"); /*do okna Alert */
+            wyprowadz_pole_AlSughari.innerHTML="Pole="+pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+        }
+        function Obw_AlSughari(a_als, b_als, h_als)
+        {
+            a=parseFloat(a_als);
+            b=parseFloat(b_als);
+            h=parseFloat(h_als);
+            c=Math.abs(a-b);
+            c=c/2;
+            bok=Math.sqrt(h*h+c*c);
+            obwod=a+b+bok+bok;
+            document.getElementsByName('obw')[0].value=obwod.toFixed(2);
+            alert("Obwod="+obwod.toFixed(2)+" cm");
+            wyprowadz_obowod_AlSughari.innerHTML="Obwod="+obwod.toFixed(2)+"cm";
+        }
+    </script>
+    </head>
+    <body>
+        Obliczanie Pola i Obwodu trapezu równoramiennego
+            <br> <br>
+        <form name="formularz" action="..." onsubmit="Pow_AlSughari(this.a_als.value,this.b_als.value,this.h_als.value);
+            Obw_AlSughari(this.a_als.value,this.b_als.value,this.h_als.value);return false">
+            Podaj a=
+            <input size="6" name="a_als">
+            Podaj b=
+            <input size="6" name="b_als">
+            Podaj h=
+            <input size="6" name="h_als">
+            <br>
+            <br>
+            <input TYPE="submit" Value="oblicz" >
+            <br>
+            <br>
+            Obwod=
+            <input size="6" name="obw">
+            Pole=
+            <input size="6" name="pole">
+        </form>
+        <table>
+            <tr id="wyprowadz_pole_AlSughari"></tr>
+            <tr id="wyprowadz_obowod_AlSughari"></tr>
+        </table>
+    </body>
+</html>

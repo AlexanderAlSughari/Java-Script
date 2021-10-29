@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 19 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="63" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+    &lt;title&gt;Zadanie 20&lt;/title&gt;
+    &lt;script language="JavaScript"&gt;
+        function Pow_AlSughari(a_als, b_als, h_als)
+        {
+            a=parseFloat(a_als);
+            b=parseFloat(b_als);
+            h=parseFloat(h_als);
+            pole=(a+b)*(h/2);
+            document.getElementsByName('pole')[0].value=pole.toFixed(2); /* na dokument */
+            alert("Pole="+pole.toFixed(2)+" cm^2"); /*do okna Alert */
+            wyprowadz_pole_AlSughari.innerHTML="Pole="+pole.toFixed(2)+" cm^2"+"&lt;br&gt;"; /* do tabeli */
+        }
+        function Obw_AlSughari(a_als, b_als, h_als)
+        {
+            a=parseFloat(a_als);
+            b=parseFloat(b_als);
+            h=parseFloat(h_als);
+            c=Math.abs(a-b);
+            c=c/2;
+            bok=Math.sqrt(h*h+c*c);
+            obwod=a+b+bok+bok;
+            document.getElementsByName('obw')[0].value=obwod.toFixed(2);
+            alert("Obwod="+obwod.toFixed(2)+" cm");
+            wyprowadz_obowod_AlSughari.innerHTML="Obwod="+obwod.toFixed(2)+"cm";
+        }
+    &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Obliczanie Pola i Obwodu trapezu równoramiennego
+            &lt;br&gt; &lt;br&gt;
+        &lt;form name="formularz" action="..." onsubmit="Pow_AlSughari(this.a_als.value,this.b_als.value,this.h_als.value);
+            Obw_AlSughari(this.a_als.value,this.b_als.value,this.h_als.value);return false"&gt;
+            Podaj a=
+            &lt;input size="6" name="a_als"&gt;
+            Podaj b=
+            &lt;input size="6" name="b_als"&gt;
+            Podaj h=
+            &lt;input size="6" name="h_als"&gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            &lt;input TYPE="submit" Value="oblicz" &gt;
+            &lt;br&gt;
+            &lt;br&gt;
+            Obwod=
+            &lt;input size="6" name="obw"&gt;
+            Pole=
+            &lt;input size="6" name="pole"&gt;
+        &lt;/form&gt;
+        &lt;table&gt;
+            &lt;tr id="wyprowadz_pole_AlSughari"&gt;&lt;/tr&gt;
+            &lt;tr id="wyprowadz_obowod_AlSughari"&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;        
+        </textarea>
+    </body>
+</html>
