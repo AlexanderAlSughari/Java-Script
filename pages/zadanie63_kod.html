@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 63 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="28" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 63&lt;/title&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+        &lt;script&gt;
+            function Oblicz()
+            {
+                var x = prompt("","")
+                var a = x.toLocaleLowerCase();
+
+                if(a == 1 || a == "czerwony")
+                    document.write("&lt;font color=red size=7&gt;Wczytałeś kolor czerwony&lt;/font&gt;");
+                else if(a == 2 || a == "niebieski")
+                    document.write("&lt;font color=blue size=1 align=center&gt;Wczytałeś kolor
+                    niebieski&lt;/font&gt;");
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;span style="color: green; font-size: 50px;"&gt;MENU&lt;/span&gt; &lt;br&gt;&lt;br&gt;
+        &lt;span style="color: red; font-size: 40px;"&gt;1 - czerwony&lt;/span&gt; &lt;br&gt;
+        &lt;span style="color: blue; font-size: 40px;"&gt;2- niebieski&lt;/span&gt; &lt;br&gt;
+        &lt;button type="button" onclick="Oblicz()"&gt;Oblicz&lt;/button&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>
