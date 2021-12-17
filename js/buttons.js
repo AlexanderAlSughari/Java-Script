@@ -227,3 +227,174 @@ function OtworzOkno_AlSughari_z23()
 
     window.open("pages/zadanie23.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
 }
+
+
+function OtworzOkno_AlSughari_z62()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie62.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z63()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie63.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z64()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie64.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z65()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie65.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z66()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie66.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z67()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie67.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z68()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie68.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z69()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie69.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z70()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie70.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z71()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie71.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z72()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie72.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z73()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie73.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z74()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie74.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z75()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie75.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z76()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie76.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z77()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie77.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
+
+function OtworzOkno_AlSughari_z78()
+{
+    var height = 100;
+    var width = 800;
+    var left = (screen.width/2)-(width/2);
+    var top = (screen.height/4)*3;
+
+    window.open("pages/zadanie78.html", "", "height="+height+", width="+width+", top="+top+", left="+left+"");
+}
