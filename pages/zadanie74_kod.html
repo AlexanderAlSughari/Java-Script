@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 74 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="36" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 74&lt;/title&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div style="font-size: 30px;"&gt;
+            &lt;script&gt;
+                for(var i = 1; i &lt;= 16; i++)
+                {
+                    var pierw_2 = Math.sqrt(i);
+                    var pierw_4 = Math.sqrt(pierw_2);
+                    pierw_2 = pierw_2.toFixed(2);
+                    pierw_4 = pierw_4.toFixed(2);
+
+                    document.write("i = " + i + "&emsp;pierw_2(" + i + ") = " + pierw_2
+                    + "&emsp;pierw_4(" + i + ") = " + pierw_4 + "&lt;br&gt;")
+
+                    if(i%3 == 0)
+                        confirm();
+                }
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>
