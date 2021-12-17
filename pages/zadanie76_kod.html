@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 77 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="36" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 77&lt;/title&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div&gt;
+            &lt;script&gt;
+                var l1 = prompt("Podaj liczbę nr1","");
+                var l2 = prompt("Podaj liczbę nr2","");
+                l1 = parseInt(l1);
+                l2 = parseInt(l2);
+
+                if(l1 &lt; l2)
+                    for(var i = l1; i &lt;= l2; i++)
+                        if(i%2 == 1)
+                            document.write("&lt;font color=green size=6&gt;" + i  + "&lt;/font&gt;&lt;br&gt;");
+                if(l1 &gt; l2)
+                    for(var k = l1; k &gt;= l2; k--)
+                        if(k%2 == 1)
+                            document.write("&lt;font color=blue size=3&gt;" + k  + "&lt;/font&gt;&lt;br&gt;");
+                else if(l1 == l2)
+                    confirm("Podane liczby są równe, brak obliczeń");
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>

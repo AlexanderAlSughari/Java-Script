@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 76</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <div>
+            <script>
+                var l1 = prompt("Podaj liczbę nr1","");
+                var l2 = prompt("Podaj liczbę nr2","");
+                l1 = parseInt(l1);
+                l2 = parseInt(l2);
+
+                if(l1 < l2)
+                    for(var i = l1; i <= l2; i++)
+                        if(i%2 == 1)
+                            document.write("<font color=green size=6>" + i  + "</font><br>");
+                if(l1 > l2)
+                    for(var k = l1; k >= l2; k--)
+                        if(k%2 == 1)
+                            document.write("<font color=blue size=3>" + k  + "</font><br>");
+                if(l1 == l2)
+                    confirm("Podane liczby są równe, brak obliczeń");
+            </script>
+        </div>
+    </body>
+</html>
