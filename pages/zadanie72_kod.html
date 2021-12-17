@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 73 kod</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <textarea name="kod" cols="100" rows="40" disabled>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zadanie 72&lt;/title&gt;
+        &lt;link rel="icon" href="../img/icon.png"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div&gt;
+            &lt;script&gt;
+                var l1_t_als = prompt("Podaj liczbę nr 1 z przedziału &lt;20, 60&gt;","");
+                var l2_t_als = prompt("Podaj liczbę nr 2 z przedziału &lt;20, 60&gt;","");
+                var pocz_als = prompt("Podaj wielkość tekstu =","");
+                var tekst_als = prompt("Podaj tekst = ","");
+
+                var l1 = parseInt(l1_t_als);
+                var l2 = parseInt(l2_t_als);
+                var pocz = parseInt(pocz_als);
+
+                if(l1 &lt; 20 || l1 &gt; 60 || l2 &lt; 20 || l1 &gt; 60)
+                    document.write("Podałeś wartośc z poza zakresu &lt;20, 60&gt;");
+                else if(l1 &lt; l2)
+                    while(pocz &lt; 100)
+                    {
+                        document.write("&lt;p style=\"font-size: " + pocz + "px; color: black;\"&gt;&lt;br&gt;"
+                        + tekst_als + "&lt;br&gt;&lt;/p&gt;");
+                        pocz += 5;
+                    }
+                else if(l1 &gt; l2)
+                    while(pocz &gt; 0)
+                        {
+                            document.write("&lt;p style=\"font-size: " + pocz + "px; color: black;\"&gt;
+                            &lt;br&gt;"+ tekst_als + "&lt;br&gt;&lt;/p&gt;");
+                            pocz -= 5;
+                        }
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+    </body>
+</html>

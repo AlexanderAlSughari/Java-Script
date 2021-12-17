@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 72</title>
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <body>
+        <div>
+            <script>
+                var l1_t_als = prompt("Podaj liczbę nr 1 z przedziału <20, 60>","");
+                var l2_t_als = prompt("Podaj liczbę nr 2 z przedziału <20, 60>","");
+                var pocz_als = prompt("Podaj wielkość tekstu =","");
+                var tekst_als = prompt("Podaj tekst = ","");
+
+                var l1 = parseInt(l1_t_als);
+                var l2 = parseInt(l2_t_als);
+                var pocz = parseInt(pocz_als);
+
+                if(l1 < 20 || l1 > 60 || l2 < 20 || l1 > 60)
+                    document.write("Podałeś wartośc z poza zakresu <20, 60>");
+                else if(l1 < l2)
+                    while(pocz < 100)
+                    {
+                        document.write("<p style=\"font-size: " + pocz + "px; color: black;\"><br>" + tekst_als + "<br></p>");
+                        pocz += 5;
+                    }
+                else if(l1 > l2)
+                    while(pocz > 0)
+                        {
+                            document.write("<p style=\"font-size: " + pocz + "px; color: black;\"><br>" + tekst_als + "<br></p>");
+                            pocz -= 5;
+                        }
+            </script>
+        </div>
+    </body>
+</html>
